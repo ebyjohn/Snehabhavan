@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("formpic.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0; 
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#97c8ed ; /* Add a semi-transparent background for better visibility */
+  z-index: 999;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  max-width: 489px;
+    margin: 120px auto 0;
+    background-color: #a7d6f9;
+    padding: 60px;
+    border-radius: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px; /* Increased padding for better spacing */
+  margin-bottom: 15px;
+  border: 1px solid #3498db; /* Blue border color */
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+  background-color: #f9e1f0;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="email"],:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #4CAF50;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form .error-message {
+  color: #ff0000;
+  margin-top: 5px;
+}
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Add custom styles for the logout button */
+.logout-button {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  background-color: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.home-button {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjust the right property to your desired distance from the right edge */
+  padding: 8px 12px;
+  background-color: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #2ece49;
+}
+.home-button:hover {
+  background-color: #2ece49;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+  display: none;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
